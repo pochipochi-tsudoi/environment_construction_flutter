@@ -96,8 +96,10 @@ dart --version
 ## 6. Android SDK の環境変数を設定する
 
 `~/.zshrc` に Android SDK 用の環境変数を追記します。
+`ANDROID_HOME` が現在の推奨です（`ANDROID_SDK_ROOT` は非推奨）。
 
 ```bash
+# ANDROID_HOME を優先設定
 grep -qxF 'export ANDROID_HOME="$HOME/Library/Android/sdk"' ~/.zshrc 2>/dev/null || echo 'export ANDROID_HOME="$HOME/Library/Android/sdk"' >> ~/.zshrc
 grep -qxF 'export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"' ~/.zshrc 2>/dev/null || echo 'export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"' >> ~/.zshrc
 grep -qxF 'export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$PATH"' ~/.zshrc 2>/dev/null || echo 'export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$PATH"' >> ~/.zshrc
@@ -130,7 +132,7 @@ source ~/.zshrc
 
 ```bash
 echo "$JAVA_HOME"
-/usr/bin/java -version
+java -version
 ```
 
 ---

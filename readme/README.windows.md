@@ -106,12 +106,13 @@ dart --version
 ## 6. Android SDK の環境変数を設定する
 
 Android SDK の既定パスを使います。
+現在、`ANDROID_HOME` が推奨されており、`ANDROID_SDK_ROOT` は非推奨（deprecated）ですが、互換性のために両方設定しておきます。
 
 ```powershell
 $ANDROID_SDK = "$env:LOCALAPPDATA\Android\Sdk"
 
 [Environment]::SetEnvironmentVariable("ANDROID_HOME", $ANDROID_SDK, "User")
-[Environment]::SetEnvironmentVariable("ANDROID_SDK_ROOT", $ANDROID_SDK, "User")
+[Environment]::SetEnvironmentVariable("ANDROID_SDK_ROOT", $ANDROID_SDK, "User") # 非推奨ですが念のため
 ```
 
 ### PATH に Android 関連を追加する
@@ -155,8 +156,11 @@ adb --version
 
 ## 7. JAVA_HOME は基本あと回しでよい
 
-Flutter は Android Studio 側の Java を見つけられることが多いので、まずは **設定しないで進めて OK** です。  
+Flutter は Android Studio 側の Java (JBR) を見つけられることが多いので、まずは **設定しないで進めて OK** です。  
 `flutter doctor` で Java 周りのエラーが出たときだけ設定します。
+
+> [!NOTE]
+> 最近の Android Studio では、同梱されている Java 実行環境が `jre` フォルダではなく `jbr` フォルダになっています。既存の設定でエラーが出る場合はパスを確認してください。
 
 ### Android Studio 同梱 JBR を使う例
 

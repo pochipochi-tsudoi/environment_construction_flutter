@@ -12,9 +12,9 @@
 
 ## Official Links
 
-- Flutter install: https://docs.flutter.dev/install
-- Flutter manual install: https://docs.flutter.dev/install/manual
-- Flutter SDK archive: https://docs.flutter.dev/install/archive
-- Android Studio download: https://developer.android.com/studio
-- Android Studio install guide: https://developer.android.com/studio/install
-- Flutter plugin for Android Studio: https://docs.flutter.dev/tools/android-studio
+- Flutter Installation: [docs.flutter.dev/install](https://docs.flutter.dev/install)
+- Windows Setup: [docs.flutter.dev/install/windows/android](https://docs.flutter.dev/install/windows/android)
+- macOS Setup: [docs.flutter.dev/install/macos/android](https://docs.flutter.dev/install/macos/android)
+- Flutter SDK archive: [docs.flutter.dev/install/archive](https://docs.flutter.dev/install/archive)
+- Android Studio download: [developer.android.com/studio](https://developer.android.com/studio)
+- Flutter plugin for Android Studio: [docs.flutter.dev/tools/android-studio](https://docs.flutter.dev/tools/android-studio)
