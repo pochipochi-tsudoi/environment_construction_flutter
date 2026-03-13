@@ -1,11 +1,11 @@
 # Flutter Environment Setup
 
-[Windows](./README.windows.md) | [macOS](./README.macos.md)
+[Windows](./readme/README.windows.md) | [macOS](./readme/README.macos.md)
 
 このリポジトリでは、Flutter の開発環境構築手順を OS ごとに分けています。
 
-- Windows: [README.windows.md](./README.windows.md)
-- macOS: [README.macos.md](./README.macos.md)
+- Windows: [README.windows.md](./readme/README.windows.md)
+- macOS: [README.macos.md](./readme/README.macos.md)
 
 > Android アプリ開発を前提にしています。
 > Flutter SDK / Android Studio / Android SDK / 環境変数 / `flutter doctor` までを対象にしています。
