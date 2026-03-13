@@ -18,3 +18,6 @@
 - Flutter SDK archive: [docs.flutter.dev/install/archive](https://docs.flutter.dev/install/archive)
 - Android Studio download: [developer.android.com/studio](https://developer.android.com/studio)
 - Flutter plugin for Android Studio: [docs.flutter.dev/tools/android-studio](https://docs.flutter.dev/tools/android-studio)
+
+# おまけ
+[gitについて](./git_github/git_github_guide.md)
